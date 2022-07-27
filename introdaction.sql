@@ -1,0 +1,10 @@
+CREATE TABLE person(
+id INT PRIMARY KEY,
+name VARCHAR(20) NOT NULL,
+surname VARCHAR(20) NOT NULL,
+identification_number UUID NOT NULL UNIQUE,
+salary DECIMAL(18,2) DEFAULT 5000.00,
+CHECK(SALARY > 0)
+);
+
+
